@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Testing</title>
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+
+
+    <!--Video-->
+    <video width="320" height="240" controls autoplay muted>
+        <source src="myvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag
+        <track
+        kind="subtitles"
+        src="sub.vtt"
+        srclang="en"
+        label="English" default>    
+    </video><br><br>
+
+
+
+
+    <!--Audio-->
+    <audio controls>
+        <source src="Island Life - Telecasted.mp3" type="audio/mp3">
+    </audio>
+
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+<body>
+
+    <h1 style="display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;">My feedback form</h1>
+
+
+    <form action="action_page.php" method="POST">
+       <div style="display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;"> 
+        <ul>
+            <li><lable for="fname">Name:</lable>
+            <input type="text" name="first_name" id="fname" size="12" maxlength="20" />
+        </li>
+            <li><label for="email">Email:</label>
+            <input type="email" name="email" id="fname" size="12" maxlength="20"/>
+        </li>
+            <li><lable for="fname">Password:</lable>
+        <input type="password" name="pass" id="pass" size="20" />
+        </li>
+        <br>
+            <li>Plese check all the emotions that apply to you</li>
+            
+            <ul>
+                <li>Angry<input name="angry" type="checkbox" value="on"></li>
+                <li>Sad<input name="sad" type="checkbox" value="on"></li>
+                <li>Happy<input name="happy" type="checkbox" value="on"></li>
+                <li>Ambivalent<input name="Ambivalent" type="checkbox" value="on"></li>
+            </ul>
+            <li>How satisfied were you that apply to you:</li>
+            <ul>
+                <li>Very satisfied<input type="radio" name="subject" value="very satisfied"></li>
+                <li>Satisfied<input type="radio" name="subject" value="satisfied"></li>
+                <li>Didn't care<input type="radio" name="subject" value="didn't care"></li>
+                <li>Dissatisfied<input type="radio" name="subject" value="dissatisfied"></li>
+                <li>Very Dissatisfied<input type="radio" name="subject" value="very dissatisfied"></li>
+            </ul>
+
+            <li>Further comments:<lable for="brower"></lable>
+                <input list="browsers" name="browser" id="browser"></li>
+
+                <li>Bio photo:<lable for="brower"></lable>
+                <input list="browsers" name="browser" id="browser"></li>
+                <input type = "file" name = "fileupload" accept = "image/*" />
+
+                <li>Location visited:</label><br>
+            <textarea name=" description">
+                Select location
+            </textarea>
+                
+            </li>
+
+           <li><input type="submit" name="submit" value="Submit" /></li>
+           
+            </ul>
+        </div>
+
+
+    </form>
+</body>
+</html>
+

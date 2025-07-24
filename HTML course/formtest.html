@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Testing</title>
+</head>
+
+<body>
+    <h1 style="display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;">HTML Forms</h1>
+
+
+    <form action="action_page.php" method="POST">
+        <div style="display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;">
+            <lable for="fname">First name:</lable>
+            <input type="text" name="first_name" id="fname" size="12" maxlength="20" />
+        </div>
+
+
+        <!--<lable for="fname">Last name:</lable><br>
+        <input type="text" name="last_name" id="lname"  size="20"/>-->
+        <br>
+
+
+        <lable for="fname">Password:</lable>
+        <input type="password" name="pass" id="pass" size="20" />
+        <input type="radio" name="subject" value="maths">Maths
+        <input type="radio" name="subject" value="physics">Physics
+        <select name="sub" id="sub">
+            <option value="Maths" selected>Maths</option>
+            <option value="Physics">Physics</option>
+
+        </select>
+
+        <!--<br>
+        <lable for="desc">Description:</lable><br>
+        <textarea rows="5" cols="50" name="dscription">
+            Enter description here.......
+        </textarea>-->
+        <!--<div>
+            <input type="checkbox" name="maths" value="on">Maths
+            <input type="checkbox" name="physics" value="on">Physics
+        </div>-->
+
+        <lable for="brower">Choose your browser from the list:</lable>
+
+        <input list="browsers" name="browser" id="browser">
+
+        <datalist id="browers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <input type="file" name="fileupload" accept="image/*" />
+
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset" value="Reset" />
+        <input type="button" name="ok" value="Ok" />
+
+
+        <div class="action"></div>
+
+    </form>
+    <fotter>
+    </fotter>
+</body>
+
+</html>
